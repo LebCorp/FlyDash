@@ -6,6 +6,8 @@ import org.lwjgl.opengl.DisplayMode;
 
 public class DisplayManager {
 
+	/** Create the display*/
+	
 	public static void create(int width, int height, String title) {
 		try {
 			Display.setDisplayMode(new DisplayMode(width, height));
@@ -16,6 +18,7 @@ public class DisplayManager {
 		}
 	}
 	
+	/** Update the display*/
 	public static void update(){
 		while(!Display.isCloseRequested()){
 			Display.update();
